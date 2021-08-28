@@ -14,10 +14,7 @@ response = ec2.describe_images(
     ]
 )
 
-# # collect the data for writing to json file
-# for ami in response:
-#     print('==========PROCESSANDO===========')
-#     print(response)
+print("===============PROCESSANDO================")
 
 # creates the json file
 with open('AMI_description.json', 'w', encoding='UTF8') as f:
